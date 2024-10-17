@@ -1,0 +1,33 @@
+[2024-10-16 15:49:58,589] 24 root - INFO - Data ingestion started
+[2024-10-16 15:49:58,615] 28 root - INFO - Successfully read the data from the dataset
+[2024-10-16 15:49:58,730] 33 root - INFO - Successfully saved the raw data in the artifacts folder
+[2024-10-16 15:49:58,730] 35 root - INFO - Performing train-test split
+[2024-10-16 15:49:58,733] 37 root - INFO - Train-test split completed
+[2024-10-16 15:49:58,854] 42 root - INFO - Successfully saved the train and test data in the artifacts folder
+[2024-10-16 15:49:58,855] 44 root - INFO - Data ingestion part completed
+[2024-10-16 15:49:58,856] 19 root - INFO - Reading train and test data
+[2024-10-16 15:49:58,930] 23 root - INFO - Train dataframe head:
+   Airline  Source  Destination  Total_Stops  Price  journey_day  journey_month  journey_year  Dep_Time_Sin  Dep_Time_Cos  Total_Duration_Minutes  Arrival_Time_Minutes  Arrival_Time_Sin  Arrival_Time_Cos
+0        2       3            3            2  13591            9              5          2019     -0.960050     -0.279829                    1580                  1155         -0.946930          0.321439
+1        8       1            5            0   4483           21              4          2019     -0.021815      0.999762                     170                   165          0.659346          0.751840
+2        3       5            6            0   3210           24              6          2019     -0.915311      0.402747                      90                  1265         -0.691513          0.722364
+3        4       2            2            0   3841           24              5          2019     -0.422618      0.906308                     140                    40          0.173648          0.984808
+4        4       5            6            0   2647           15              6          2019      0.997859      0.065403                      90                   435          0.946930         -0.321439
+[2024-10-16 15:49:59,097] 24 root - INFO - Test dataframe head:
+   Airline  Source  Destination  Total_Stops  Price  journey_day  journey_month  journey_year  Dep_Time_Sin  Dep_Time_Cos  Total_Duration_Minutes  Arrival_Time_Minutes  Arrival_Time_Sin  Arrival_Time_Cos
+0        3       1            1            1  17996            6              3          2019      0.866025     -0.500000                    1455                   495          0.831470         -0.555570
+1        4       2            2            0   3873            6              6          2019     -0.422618      0.906308                     140                    40          0.173648          0.984808
+2        1       2            2            0   4462           18              3          2019      0.991445      0.130526                     170                   500          0.819152         -0.573576
+3        3       5            6            0   2228           24              3          2019     -0.843391     -0.537300                      90                  1040         -0.984808         -0.173648
+4        4       1            5            0   4991           27              4          2019      0.608761     -0.793353                     170                   740         -0.087156         -0.996195
+[2024-10-16 15:49:59,097] 29 root - INFO - Splitting input features and target features
+[2024-10-16 15:49:59,101] 37 root - INFO - No further transformation required as the data is already encoded
+[2024-10-16 15:49:59,104] 42 root - INFO - Data transformation completed
+[2024-10-16 15:49:59,105] 20 root - INFO - Splitting Dependent and Independent variables from train and test data
+[2024-10-16 15:49:59,118] 59 root - INFO - Model: LinearRegression, R2 Score: 0.4471809776182274
+[2024-10-16 15:49:59,138] 59 root - INFO - Model: Lasso, R2 Score: 0.4472235195412362
+[2024-10-16 15:49:59,146] 59 root - INFO - Model: Ridge, R2 Score: 0.44718309923310706
+[2024-10-16 15:49:59,157] 59 root - INFO - Model: ElasticNet, R2 Score: 0.38972453714889743
+[2024-10-16 15:50:07,006] 59 root - INFO - Model: RandomForestRegressor, R2 Score: 0.8182940637265296
+[2024-10-16 15:50:07,006] 33 root - INFO - Model Report : {'LinearRegression': 0.4471809776182274, 'Lasso': 0.4472235195412362, 'Ridge': 0.44718309923310706, 'ElasticNet': 0.38972453714889743, 'RandomForestRegressor': 0.8182940637265296}
+[2024-10-16 15:50:07,006] 40 root - INFO - Best Model Found, Model Name: RandomForestRegressor, R2 Score: 0.8182940637265296

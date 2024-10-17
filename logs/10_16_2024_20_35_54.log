@@ -1,0 +1,17 @@
+[2024-10-16 20:35:57,322] 24 root - INFO - Data ingestion started
+[2024-10-16 20:35:57,355] 28 root - INFO - Successfully read the data from the dataset
+[2024-10-16 20:35:57,400] 33 root - INFO - Successfully saved the raw data in the artifacts folder
+[2024-10-16 20:35:57,400] 35 root - INFO - Performing train-test split
+[2024-10-16 20:35:57,412] 37 root - INFO - Train-test split completed
+[2024-10-16 20:35:57,456] 42 root - INFO - Successfully saved the train and test data in the artifacts folder
+[2024-10-16 20:35:57,457] 44 root - INFO - Data ingestion part completed
+[2024-10-16 20:35:57,583] 92 root - INFO - Read train and test data successfully.
+[2024-10-16 20:35:57,583] 95 root - INFO - Starting Feature Engineering.
+[2024-10-16 20:35:57,687] 128 root - INFO - Feature Engineering completed successfully.
+[2024-10-16 20:35:57,690] 140 root - INFO - Separated input features and target feature.
+[2024-10-16 20:35:57,690] 38 root - INFO - Data Transformation initiated.
+[2024-10-16 20:35:57,691] 68 root - INFO - Preprocessing Pipeline Created Successfully.
+[2024-10-16 20:35:57,770] 149 root - INFO - Applied preprocessing on train and test data.
+[2024-10-16 20:35:57,772] 155 root - INFO - Created the final train and test arrays.
+[2024-10-16 20:35:57,775] 24 root - INFO - Object saved successfully at artifacts\preprocessor.pkl
+[2024-10-16 20:35:57,776] 163 root - INFO - Preprocessing object saved successfully.

@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: FlightPricePRediction
+Version: 0.0.1
+Summary: A package for flight price prediction
+Author: Ajay Chaudhary
+Author-email: ajaych2822@gmail.com
+Requires-Python: >=3.6
+Requires-Dist: scikit-learn
+Requires-Dist: pandas
+Requires-Dist: numpy

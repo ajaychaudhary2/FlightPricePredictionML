@@ -1,0 +1,2 @@
+[2024-10-16 16:03:34,777] 54 root - INFO - Exception Occured in load_object function utils
+[2024-10-16 16:03:34,778] 18 root - ERROR - Error loading model from artifacts/model.pkl: Error occurred in Python script name [e:\data_science _master\ml\flight_prediction\src\FlightPricePrediction\utils\utils.py] line number [51] error message [[Errno 2] No such file or directory: 'artifacts/model.pkl']

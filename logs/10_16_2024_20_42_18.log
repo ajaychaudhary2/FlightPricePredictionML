@@ -1,0 +1,25 @@
+[2024-10-16 20:42:20,652] 24 root - INFO - Data ingestion started
+[2024-10-16 20:42:20,708] 28 root - INFO - Successfully read the data from the dataset
+[2024-10-16 20:42:20,778] 33 root - INFO - Successfully saved the raw data in the artifacts folder
+[2024-10-16 20:42:20,778] 35 root - INFO - Performing train-test split
+[2024-10-16 20:42:20,788] 37 root - INFO - Train-test split completed
+[2024-10-16 20:42:20,866] 42 root - INFO - Successfully saved the train and test data in the artifacts folder
+[2024-10-16 20:42:20,866] 44 root - INFO - Data ingestion part completed
+[2024-10-16 20:42:20,958] 92 root - INFO - Read train and test data successfully.
+[2024-10-16 20:42:20,958] 95 root - INFO - Starting Feature Engineering.
+[2024-10-16 20:42:21,082] 128 root - INFO - Feature Engineering completed successfully.
+[2024-10-16 20:42:21,086] 140 root - INFO - Separated input features and target feature.
+[2024-10-16 20:42:21,086] 38 root - INFO - Data Transformation initiated.
+[2024-10-16 20:42:21,086] 68 root - INFO - Preprocessing Pipeline Created Successfully.
+[2024-10-16 20:42:21,142] 149 root - INFO - Applied preprocessing on train and test data.
+[2024-10-16 20:42:21,144] 155 root - INFO - Created the final train and test arrays.
+[2024-10-16 20:42:21,145] 25 root - INFO - Object saved successfully at artifacts\preprocessor.pkl
+[2024-10-16 20:42:21,145] 163 root - INFO - Preprocessing object saved successfully.
+[2024-10-16 20:42:21,147] 23 root - INFO - Splitting Dependent and Independent variables from train and test data
+[2024-10-16 20:42:21,174] 54 root - INFO - Model: LinearRegression, R2 Score: 61.58%
+[2024-10-16 20:42:21,563] 54 root - INFO - Model: Lasso, R2 Score: 61.61%
+[2024-10-16 20:42:21,584] 54 root - INFO - Model: Ridge, R2 Score: 61.56%
+[2024-10-16 20:42:21,633] 54 root - INFO - Model: ElasticNet, R2 Score: 43.99%
+[2024-10-16 20:42:21,635] 44 root - INFO - Model Report : {'LinearRegression': 0.6157836928971893, 'Lasso': 0.6160910524127869, 'Ridge': 0.61564521110292, 'ElasticNet': 0.43987359037177487}
+[2024-10-16 20:42:21,637] 53 root - INFO - Best Model Found, Model Name: Lasso, R2 Score: 61.61%
+[2024-10-16 20:42:21,639] 25 root - INFO - Object saved successfully at artifacts\model.pkl

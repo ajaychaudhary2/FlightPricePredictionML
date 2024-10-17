@@ -1,0 +1,53 @@
+[2024-10-17 09:13:31,435] 24 root - INFO - Data ingestion started
+[2024-10-17 09:13:31,466] 28 root - INFO - Successfully read the data from the dataset
+[2024-10-17 09:13:31,522] 33 root - INFO - Successfully saved the raw data in the artifacts folder
+[2024-10-17 09:13:31,522] 35 root - INFO - Performing train-test split
+[2024-10-17 09:13:31,537] 37 root - INFO - Train-test split completed
+[2024-10-17 09:13:31,582] 42 root - INFO - Successfully saved the train and test data in the artifacts folder
+[2024-10-17 09:13:31,582] 44 root - INFO - Data ingestion part completed
+[2024-10-17 09:13:31,583] 24 root - INFO - Data ingestion completed successfully.
+[2024-10-17 09:13:31,651] 38 root - ERROR - An error occurred in the data processing pipeline.
+[2024-10-17 09:13:31,695] 39 root - ERROR - Error occurred in Python script name [e:\data_science _master\ml\flight_prediction\src\FlightPricePrediction\components\data_transformation.py] line number [40] error message [A given column is not a column of the dataframe]
+Traceback (most recent call last):
+  File "E:\Data_Science _master\ML\Flight_prediction\env\lib\site-packages\pandas\core\indexes\base.py", line 3653, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas\_libs\index.pyx", line 147, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 176, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 7080, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'journey_day'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\Data_Science _master\ML\Flight_prediction\env\lib\site-packages\sklearn\utils\__init__.py", line 447, in _get_column_indices
+    col_idx = all_columns.get_loc(col)
+  File "E:\Data_Science _master\ML\Flight_prediction\env\lib\site-packages\pandas\core\indexes\base.py", line 3655, in get_loc
+    raise KeyError(key) from err
+KeyError: 'journey_day'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "e:\data_science _master\ml\flight_prediction\src\FlightPricePrediction\components\data_transformation.py", line 40, in initiate_data_transformation
+    input_feature_train_arr = self.preprocessor.fit_transform(input_feature_train_df)
+  File "E:\Data_Science _master\ML\Flight_prediction\env\lib\site-packages\sklearn\utils\_set_output.py", line 157, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+  File "E:\Data_Science _master\ML\Flight_prediction\env\lib\site-packages\sklearn\base.py", line 1152, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+  File "E:\Data_Science _master\ML\Flight_prediction\env\lib\site-packages\sklearn\compose\_column_transformer.py", line 751, in fit_transform
+    self._validate_column_callables(X)
+  File "E:\Data_Science _master\ML\Flight_prediction\env\lib\site-packages\sklearn\compose\_column_transformer.py", line 459, in _validate_column_callables
+    transformer_to_input_indices[name] = _get_column_indices(X, columns)
+  File "E:\Data_Science _master\ML\Flight_prediction\env\lib\site-packages\sklearn\utils\__init__.py", line 455, in _get_column_indices
+    raise ValueError("A given column is not a column of the dataframe") from e
+ValueError: A given column is not a column of the dataframe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "src/FlightPricePrediction/pipelines/training_pipeline.py", line 31, in <module>
+    train_arr, test_arr = data_transformation.initiate_data_transformation(train_data_path, test_data_path)
+  File "e:\data_science _master\ml\flight_prediction\src\FlightPricePrediction\components\data_transformation.py", line 54, in initiate_data_transformation
+    raise customexception(e, sys)
+FlightPricePrediction.exception.customexception: Error occurred in Python script name [e:\data_science _master\ml\flight_prediction\src\FlightPricePrediction\components\data_transformation.py] line number [40] error message [A given column is not a column of the dataframe]

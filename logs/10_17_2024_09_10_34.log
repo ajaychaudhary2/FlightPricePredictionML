@@ -1,0 +1,46 @@
+[2024-10-17 09:10:36,117] 24 root - INFO - Data ingestion started
+[2024-10-17 09:10:36,156] 28 root - INFO - Successfully read the data from the dataset
+[2024-10-17 09:10:36,230] 33 root - INFO - Successfully saved the raw data in the artifacts folder
+[2024-10-17 09:10:36,230] 35 root - INFO - Performing train-test split
+[2024-10-17 09:10:36,233] 37 root - INFO - Train-test split completed
+[2024-10-17 09:10:36,288] 42 root - INFO - Successfully saved the train and test data in the artifacts folder
+[2024-10-17 09:10:36,288] 44 root - INFO - Data ingestion part completed
+[2024-10-17 09:10:36,289] 24 root - INFO - Data ingestion completed successfully.
+[2024-10-17 09:10:36,402] 23 root - INFO - Read train and test data successfully.
+[2024-10-17 09:10:36,408] 26 root - INFO - Starting Feature Engineering.
+[2024-10-17 09:10:36,424] 34 root - INFO - Feature Engineering completed successfully.
+[2024-10-17 09:10:36,428] 49 root - INFO - Separated input features and target feature.
+[2024-10-17 09:10:36,433] 93 root - ERROR - Exception occurred in initiate_data_transformation method.
+[2024-10-17 09:10:36,433] 38 root - ERROR - An error occurred in the data processing pipeline.
+[2024-10-17 09:10:36,433] 39 root - ERROR - Error occurred in Python script name [e:\data_science _master\ml\flight_prediction\src\FlightPricePrediction\components\data_transformation.py] line number [55] error message [could not convert string to float: 'IndiGo']
+Traceback (most recent call last):
+  File "e:\data_science _master\ml\flight_prediction\src\FlightPricePrediction\components\data_transformation.py", line 55, in initiate_data_transformation
+    input_feature_train_arr = preprocessing_obj.fit_transform(input_feature_train_df)
+  File "E:\Data_Science _master\ML\Flight_prediction\env\lib\site-packages\sklearn\utils\_set_output.py", line 157, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+  File "E:\Data_Science _master\ML\Flight_prediction\env\lib\site-packages\sklearn\base.py", line 916, in fit_transform
+    return self.fit(X, **fit_params).transform(X)
+  File "E:\Data_Science _master\ML\Flight_prediction\env\lib\site-packages\sklearn\preprocessing\_data.py", line 839, in fit
+    return self.partial_fit(X, y, sample_weight)
+  File "E:\Data_Science _master\ML\Flight_prediction\env\lib\site-packages\sklearn\base.py", line 1152, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+  File "E:\Data_Science _master\ML\Flight_prediction\env\lib\site-packages\sklearn\preprocessing\_data.py", line 875, in partial_fit
+    X = self._validate_data(
+  File "E:\Data_Science _master\ML\Flight_prediction\env\lib\site-packages\sklearn\base.py", line 605, in _validate_data
+    out = check_array(X, input_name="X", **check_params)
+  File "E:\Data_Science _master\ML\Flight_prediction\env\lib\site-packages\sklearn\utils\validation.py", line 915, in check_array
+    array = _asarray_with_order(array, order=order, dtype=dtype, xp=xp)
+  File "E:\Data_Science _master\ML\Flight_prediction\env\lib\site-packages\sklearn\utils\_array_api.py", line 380, in _asarray_with_order
+    array = numpy.asarray(array, order=order, dtype=dtype)
+  File "E:\Data_Science _master\ML\Flight_prediction\env\lib\site-packages\pandas\core\generic.py", line 1998, in __array__
+    arr = np.asarray(values, dtype=dtype)
+ValueError: could not convert string to float: 'IndiGo'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "src/FlightPricePrediction/pipelines/training_pipeline.py", line 31, in <module>
+    train_arr, test_arr = data_transformation.initiate_data_transformation(train_data_path, test_data_path)
+  File "e:\data_science _master\ml\flight_prediction\src\FlightPricePrediction\components\data_transformation.py", line 94, in initiate_data_transformation
+    raise customexception(e, sys)
+FlightPricePrediction.exception.customexception: Error occurred in Python script name [e:\data_science _master\ml\flight_prediction\src\FlightPricePrediction\components\data_transformation.py] line number [55] error message [could not convert string to float: 'IndiGo']

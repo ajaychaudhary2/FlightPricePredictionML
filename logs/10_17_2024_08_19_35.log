@@ -1,0 +1,27 @@
+[2024-10-17 08:19:42,940] 224 werkzeug - WARNING -  * Debugger is active!
+[2024-10-17 08:19:43,058] 224 werkzeug - INFO -  * Debugger PIN: 557-542-256
+[2024-10-17 08:19:43,132] 224 werkzeug - INFO - 127.0.0.1 - - [17/Oct/2024 08:19:43] "GET / HTTP/1.1" 200 -
+[2024-10-17 08:19:43,188] 224 werkzeug - INFO - 127.0.0.1 - - [17/Oct/2024 08:19:43] "[33mGET /styles.css HTTP/1.1[0m" 404 -
+[2024-10-17 08:19:43,310] 224 werkzeug - INFO - 127.0.0.1 - - [17/Oct/2024 08:19:43] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2024-10-17 08:20:35,893] 27 root - INFO - Preprocessing the input data.
+[2024-10-17 08:20:35,967] 224 werkzeug - INFO - 127.0.0.1 - - [17/Oct/2024 08:20:35] "POST / HTTP/1.1" 200 -
+[2024-10-17 08:20:39,952] 224 werkzeug - INFO - 127.0.0.1 - - [17/Oct/2024 08:20:39] "GET / HTTP/1.1" 200 -
+[2024-10-17 08:21:24,048] 224 werkzeug - INFO - 127.0.0.1 - - [17/Oct/2024 08:21:24] "GET / HTTP/1.1" 200 -
+[2024-10-17 08:21:24,105] 224 werkzeug - INFO - 127.0.0.1 - - [17/Oct/2024 08:21:24] "[33mGET /styles.css HTTP/1.1[0m" 404 -
+[2024-10-17 08:21:46,625] 27 root - INFO - Preprocessing the input data.
+[2024-10-17 08:21:46,689] 224 werkzeug - INFO - 127.0.0.1 - - [17/Oct/2024 08:21:46] "POST / HTTP/1.1" 200 -
+[2024-10-17 08:24:28,406] 224 werkzeug - INFO - 127.0.0.1 - - [17/Oct/2024 08:24:28] "GET / HTTP/1.1" 200 -
+[2024-10-17 08:24:28,487] 224 werkzeug - INFO - 127.0.0.1 - - [17/Oct/2024 08:24:28] "[33mGET /styles.css HTTP/1.1[0m" 404 -
+[2024-10-17 08:24:58,682] 27 root - INFO - Preprocessing the input data.
+[2024-10-17 08:24:58,719] 224 werkzeug - INFO - 127.0.0.1 - - [17/Oct/2024 08:24:58] "POST / HTTP/1.1" 200 -
+[2024-10-17 08:25:02,408] 224 werkzeug - INFO - 127.0.0.1 - - [17/Oct/2024 08:25:02] "GET / HTTP/1.1" 200 -
+[2024-10-17 08:25:02,478] 224 werkzeug - INFO - 127.0.0.1 - - [17/Oct/2024 08:25:02] "[33mGET /styles.css HTTP/1.1[0m" 404 -
+[2024-10-17 08:25:50,363] 27 root - INFO - Preprocessing the input data.
+[2024-10-17 08:25:50,424] 224 werkzeug - INFO - 127.0.0.1 - - [17/Oct/2024 08:25:50] "POST / HTTP/1.1" 200 -
+[2024-10-17 08:25:54,345] 224 werkzeug - INFO - 127.0.0.1 - - [17/Oct/2024 08:25:54] "GET / HTTP/1.1" 200 -
+[2024-10-17 08:25:54,417] 224 werkzeug - INFO - 127.0.0.1 - - [17/Oct/2024 08:25:54] "[33mGET /styles.css HTTP/1.1[0m" 404 -
+[2024-10-17 08:26:29,905] 27 root - INFO - Preprocessing the input data.
+[2024-10-17 08:26:29,973] 224 werkzeug - INFO - 127.0.0.1 - - [17/Oct/2024 08:26:29] "POST / HTTP/1.1" 200 -
+[2024-10-17 08:26:36,055] 224 werkzeug - INFO - 127.0.0.1 - - [17/Oct/2024 08:26:36] "GET / HTTP/1.1" 200 -
+[2024-10-17 08:26:36,115] 224 werkzeug - INFO - 127.0.0.1 - - [17/Oct/2024 08:26:36] "[33mGET /styles.css HTTP/1.1[0m" 404 -
+[2024-10-17 08:27:57,846] 224 werkzeug - INFO -  * Detected change in 'e:\\data_science _master\\ml\\flight_prediction\\src\\FlightPricePrediction\\components\\data_transformation.py', reloading

@@ -1,0 +1,11 @@
+[2024-10-16 20:23:05,835] 24 root - INFO - Data ingestion started
+[2024-10-16 20:23:05,921] 28 root - INFO - Successfully read the data from the dataset
+[2024-10-16 20:23:06,035] 33 root - INFO - Successfully saved the raw data in the artifacts folder
+[2024-10-16 20:23:06,036] 35 root - INFO - Performing train-test split
+[2024-10-16 20:23:06,046] 37 root - INFO - Train-test split completed
+[2024-10-16 20:23:06,089] 42 root - INFO - Successfully saved the train and test data in the artifacts folder
+[2024-10-16 20:23:06,090] 44 root - INFO - Data ingestion part completed
+[2024-10-16 20:23:06,214] 92 root - INFO - Read train and test data successfully.
+[2024-10-16 20:23:06,215] 95 root - INFO - Starting Feature Engineering.
+[2024-10-16 20:23:06,345] 128 root - INFO - Feature Engineering completed successfully.
+[2024-10-16 20:23:06,346] 171 root - ERROR - Exception occurred in initiate_data_transformation method.

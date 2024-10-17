@@ -1,0 +1,5 @@
+[2024-10-17 09:15:05,354] 224 werkzeug - WARNING -  * Debugger is active!
+[2024-10-17 09:15:05,608] 224 werkzeug - INFO -  * Debugger PIN: 557-542-256
+[2024-10-17 09:15:05,705] 224 werkzeug - INFO - 127.0.0.1 - - [17/Oct/2024 09:15:05] "GET / HTTP/1.1" 200 -
+[2024-10-17 09:15:05,754] 224 werkzeug - INFO - 127.0.0.1 - - [17/Oct/2024 09:15:05] "[33mGET /styles.css HTTP/1.1[0m" 404 -
+[2024-10-17 09:15:20,273] 224 werkzeug - INFO -  * Detected change in 'e:\\data_science _master\\ml\\flight_prediction\\src\\FlightPricePrediction\\pipelines\\training_pipeline.py', reloading

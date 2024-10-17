@@ -1,0 +1,14 @@
+[2024-10-17 09:09:35,812] 24 root - INFO - Data ingestion started
+[2024-10-17 09:09:35,841] 28 root - INFO - Successfully read the data from the dataset
+[2024-10-17 09:09:35,893] 33 root - INFO - Successfully saved the raw data in the artifacts folder
+[2024-10-17 09:09:35,893] 35 root - INFO - Performing train-test split
+[2024-10-17 09:09:35,899] 37 root - INFO - Train-test split completed
+[2024-10-17 09:09:35,958] 42 root - INFO - Successfully saved the train and test data in the artifacts folder
+[2024-10-17 09:09:35,958] 44 root - INFO - Data ingestion part completed
+[2024-10-17 09:09:35,959] 18 root - INFO - Data ingestion completed successfully.
+[2024-10-17 09:09:35,959] 31 root - ERROR - An error occurred in the data processing pipeline.
+[2024-10-17 09:09:35,965] 32 root - ERROR - __init__() missing 1 required positional argument: 'data_transformation_config'
+Traceback (most recent call last):
+  File "src/FlightPricePrediction/pipelines/training_pipeline.py", line 21, in <module>
+    data_transformation = DataTransformation()  # Pass config if needed
+TypeError: __init__() missing 1 required positional argument: 'data_transformation_config'

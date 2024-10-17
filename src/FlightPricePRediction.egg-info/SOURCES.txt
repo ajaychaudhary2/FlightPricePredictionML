@@ -1,0 +1,17 @@
+setup.py
+src/FlightPricePRediction.egg-info/PKG-INFO
+src/FlightPricePRediction.egg-info/SOURCES.txt
+src/FlightPricePRediction.egg-info/dependency_links.txt
+src/FlightPricePRediction.egg-info/requires.txt
+src/FlightPricePRediction.egg-info/top_level.txt
+src/FlightPricePrediction/__init__.py
+src/FlightPricePrediction/exception.py
+src/FlightPricePrediction/logger.py
+src/FlightPricePrediction/components/__init__.py
+src/FlightPricePrediction/components/data_ingestion.py
+src/FlightPricePrediction/components/data_transformation.py
+src/FlightPricePrediction/components/model_trainer.py
+src/FlightPricePrediction/pipelines/__init__.py
+src/FlightPricePrediction/pipelines/prediction_pipeline.py
+src/FlightPricePrediction/pipelines/training_pipeline.py
+src/FlightPricePrediction/utils/__init__.py
